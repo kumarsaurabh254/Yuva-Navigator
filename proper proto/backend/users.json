@@ -1,0 +1,37 @@
+{
+  "tarugautam612@gmail.com": {
+    "name": "TARU",
+    "password": "scrypt:32768:8:1$1Fa5gqE5v2CbQETO$0fa37ee8b409e911795c77c3be678cb29b778cd4f4e7983d171cf7eaca23252c97e977831f29c7ae935fbfaddd8dac493312db171e94a5b2c817bd6fa726b272",
+    "profile": {
+      "age": "18",
+      "goal": "Competition",
+      "activity": "Low impact",
+      "accessibility": "Wheelchair accessible",
+      "budget": "\u20b9500\u2013\u20b91,500"
+    },
+    "recommendation": {
+      "demo": true,
+      "input_received": {
+        "accessibility": "Wheelchair accessible",
+        "activity": "Low impact",
+        "age": "18",
+        "budget": "\u20b9500\u2013\u20b91,500",
+        "goal": "Competition"
+      },
+      "sports": [
+        {
+          "score": 0.88,
+          "sport": "Athletics"
+        },
+        {
+          "score": 0.84,
+          "sport": "Badminton"
+        },
+        {
+          "score": 0.8,
+          "sport": "Table Tennis"
+        }
+      ]
+    }
+  }
+}

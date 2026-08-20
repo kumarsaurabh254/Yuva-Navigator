@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Profile | SportFit Pathfinder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">SF</span>
+    <span>SportFit Pathfinder</span>
+  </a>
+
+  <nav>
+    <a href="profile.html">My Profile</a>
+    <a href="opportunities.html">Opportunities</a>
+    <a href="nutrition.html">Nutrition</a>
+    <a href="accessibility.html">Accessibility</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="btn btn-light" id="logout">Log out</button>
+  </div>
+</header>
+
+
+<main class="page-shell">
+
+  <div class="profile-heading">
+    <div>
+      <span class="eyebrow">MY PROFILE</span>
+      <h1 id="welcome">Welcome</h1>
+      <p>Complete your profile to generate personalized sports recommendations.</p>
+    </div>
+
+    <span class="badge">PYTHON ML READY</span>
+  </div>
+
+
+  <div class="profile-layout">
+
+    <aside class="side-card">
+
+      <div class="avatar" id="avatar">SF</div>
+
+      <strong id="sideName">Athlete</strong>
+
+      <p id="sideEmail" class="muted"></p>
+
+      <div class="side-nav">
+        <a class="active" href="#profile">Sports profile</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+
+    </aside>
+
+
+    <section class="dashboard-main" id="profile">
+
+      <span class="eyebrow">SPORT DISCOVERY PROFILE</span>
+
+      <h2>Tell us about yourself</h2>
+
+      <div class="location-notice">
+        <strong>Privacy & prototype note</strong>
+        Your profile is used to demonstrate the recommendation flow.
+        Your information is processed by the SportFit Pathfinder backend
+        to generate your sports recommendation.
+      </div>
+
+
+      <!-- SPORTS PROFILE FORM -->
+
+      <form id="profileForm" class="profile-form">
+
+        <!-- AGE -->
+
+        <label>
+          Age
+
+          <input
+            id="age"
+            type="number"
+            min="8"
+            max="60"
+            required
+          >
+        </label>
+
+
+        <!-- HEIGHT -->
+
+        <label>
+          Height (cm)
+
+          <input
+            id="height_cm"
+            type="number"
+            min="80"
+            max="250"
+            step="0.1"
+            placeholder="e.g. 175"
+            required
+          >
+        </label>
+
+
+        <!-- WEIGHT -->
+
+        <label>
+          Weight (kg)
+
+          <input
+            id="weight_kg"
+            type="number"
+            min="20"
+            max="250"
+            step="0.1"
+            placeholder="e.g. 70"
+            required
+          >
+        </label>
+
+
+        <!-- GENDER -->
+
+        <label>
+          Gender
+
+          <select id="gender" required>
+
+            <option value="" selected disabled>
+              Select gender
+            </option>
+
+            <option value="Male">
+              Male
+            </option>
+
+            <option value="Female">
+              Female
+            </option>
+
+            <option value="Third Gender">
+              Third Gender
+            </option>
+
+          </select>
+        </label>
+
+
+        <!-- PARA ATHLETE STATUS -->
+
+        <label>
+          Disability / Athlete Type
+
+          <select id="para_athlete" required>
+
+            <option value="" selected disabled>
+              Select an option
+            </option>
+
+            <option value="false">
+              No disability / Non-para athlete
+            </option>
+
+            <option value="true">
+              Para athlete
+            </option>
+
+          </select>
+        </label>
+
+
+        <!-- CITY -->
+
+        <label>
+          City / district
+
+          <input
+            id="location"
+            type="text"
+            placeholder="e.g. Lucknow"
+            required
+          >
+        </label>
+
+
+        <!-- GOAL -->
+
+        <label>
+          Primary goal
+
+          <select id="goal" required>
+
+            <option value="" selected disabled>
+              Select a goal
+            </option>
+
+            <option value="Fitness">
+              Fitness
+            </option>
+
+            <option value="Competition">
+              Competition
+            </option>
+
+            <option value="Skill development">
+              Skill development
+            </option>
+
+            <option value="Social / recreation">
+              Social / recreation
+            </option>
+
+          </select>
+        </label>
+
+
+        <!-- ACTIVITY -->
+
+        <label>
+          Preferred activity level
+
+          <select id="activity" required>
+
+            <option value="" selected disabled>
+              Select activity level
+            </option>
+
+            <option value="Low impact">
+              Low impact
+            </option>
+
+            <option value="Moderate">
+              Moderate
+            </option>
+
+            <option value="High intensity">
+              High intensity
+            </option>
+
+          </select>
+        </label>
+
+
+        <!-- ACCESSIBILITY -->
+
+        <label>
+          Accessibility needs
+
+          <select id="accessibility" required>
+
+            <option value="" selected disabled>
+              Select an option
+            </option>
+
+            <option value="None">
+              None
+            </option>
+
+            <option value="Wheelchair accessible">
+              Wheelchair accessible
+            </option>
+
+            <option value="Visual support">
+              Visual support
+            </option>
+
+            <option value="Hearing support">
+              Hearing support
+            </option>
+
+            <option value="Other accommodation">
+              Other accommodation
+            </option>
+
+          </select>
+        </label>
+
+
+        <!-- BUDGET -->
+
+        <label>
+          Monthly budget
+
+          <select id="budget" required>
+
+            <option value="" selected disabled>
+              Select budget
+            </option>
+
+            <option value="Under ₹500">
+              Under ₹500
+            </option>
+
+            <option value="₹500–₹1,500">
+              ₹500–₹1,500
+            </option>
+
+            <option value="₹1,500–₹3,000">
+              ₹1,500–₹3,000
+            </option>
+
+            <option value="₹3,000+">
+              ₹3,000+
+            </option>
+
+          </select>
+        </label>
+
+
+        <!-- SUBMIT -->
+
+        <button
+          class="btn btn-primary wide"
+          type="submit"
+        >
+          Generate personalized recommendations
+        </button>
+
+      </form>
+
+
+      <!-- RECOMMENDATION RESULT -->
+
+      <div class="profile-section">
+
+        <span class="eyebrow">RECOMMENDATION</span>
+
+        <h3 id="recommendationTitle">
+          Complete the form to continue
+        </h3>
+
+        <p id="recommendationText">
+          Your existing machine-learning model will be used to
+          generate a personalized sports recommendation.
+        </p>
+
+        <div
+          id="results"
+          class="recommendation-result"
+        ></div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+
+<script src="profile.js"></script>
+
+</body>
+</html>
